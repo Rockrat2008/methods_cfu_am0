@@ -49,7 +49,17 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# The replace method is called on the change_word variable, which stores the string object "string". 
+# The replace method will replace the value in change_word to the aruement that is passed when the method is called
+# The puts command prints "strong" to the console showing that the initial value set "string" has been replaced
+change_word = "string"
+puts change_word.replace("strong")
 
+# The squeeze! method is called on the squeeze_word variable, which stores the string object "Mississippi". 
+# The replasqueeze! method will remove all contiguous duplicate letters from the value in squeeze_word when the method is called
+# The puts command prints "Misisipi" to the console showing that the duplicate contiguous letters were removed
+squeeze_word = "Mississippi"
+puts squeeze_word.squeeze!
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
