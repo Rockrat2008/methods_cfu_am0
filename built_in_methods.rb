@@ -67,7 +67,17 @@ puts squeeze_word.squeeze!
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The Integer.sqrt method is called on the num1 variable, which stores the Integer 49. 
+# The Integer.sqrt method will take the value 49 from the variable num1 and return the square root
+# The puts command prints "7" to the console showing the square root of 49
+num1 = 49
+puts Integer.sqrt(num1)
 
+# The Integer.try_convert method is called on the num2 variable, which stores the float 3.14159 
+# The Integer.try_convert method will take the value 3.14159 from the variable num2 and try to convert it to an Integer value
+# The puts command prints "3" to the console showing the float 3.14159 was converted to an Integer 3
+num2 = 3.14159
+puts Integer.try_convert(num2)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
