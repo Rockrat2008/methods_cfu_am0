@@ -89,6 +89,15 @@ puts full_name2
 
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
+def square(num)
+  num * num
+end
+
+num1_sqrd = square(4)
+puts num1_sqrd
+
+num2_sqrd = square(12)
+puts num2_sqrd
 
 # 5: Write a method named "check_stock" that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
