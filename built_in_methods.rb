@@ -84,3 +84,17 @@ puts Integer.try_convert(num2)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The .unshift method is called on the array1 variable, which stores the values 2, 4, 6
+# The .unshift method will take the argument provided and add it to the beginning of the array
+# The puts command prints the convents of the array showing that the 0 was added to the beginning of the array
+array1 = [2, 4, 6]
+array1.unshift(0)
+puts array1
+
+# The .insert method is called on the array2 variable, which stores the values 10, 20, 40
+# The .inseret method will takes 2 parameters, the first a position and the second a value and stores the value in that position of the array
+# The puts command prints the convents of the array showing that the 30 was added between 20 and 40 in the 2nd position of the array
+array2 = [10, 20, 40]
+array2.insert(2, 30)
+puts array2
