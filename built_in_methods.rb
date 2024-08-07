@@ -8,19 +8,29 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include? method is called on the string object "Hello World"
+# The sting "Hello" is passed; include? is used to to check if the arguemnt is in the provided String
+# The return value is true
 "Hello World".include?("Hello")
 
-
+# The end_with? method is called on the string object "Hello World"
+# The sting "Hello" is passed; end_with? is used to to check if the arguemnt is at the end of the provided String
+# The return value is false
 "Hello World".end_with?("Hello")
 
-
+# The .end_wwith? method is called on the string object "Hello World"
+# The string "rld" is passed; end_with? is used to to check if the arguemnt is at the end of the provided String
+# The return value is true
 "Hello World".end_with?("rld")
 
-
+# The .even? method is called on the integer 12
+# No arguments are passed; even? has one clear job which is to determine if the Integer is even
+# The return value is true
 12.even?
 
-
+# The .next method is called on the integer 18
+# No arguments are passed; .next has one clear job which is to return the next number in the sequence
+# The return value is 19
 18.next
 
 
