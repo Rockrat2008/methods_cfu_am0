@@ -102,14 +102,25 @@ puts num2_sqrd
 # 5: Write a method named "check_stock" that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-check_stock(4, "Coffee");
-# => "Coffee is stocked"
+def check_stock(item_quantity, item_desc)
+  if item_quantity == 4 && item_desc = "Coffee"
+    "Coffee is stocked"
+  elsif item_quantity == 3 && item_desc = "Tortillas"
+    "Tortillas - running low"
+  elsif item_quantity == 0 && item_desc = "Cheese"
+    "Cheeese - out of stock!"
+  elsif item_quantity == 1 && item_desc = "Salsa"
+    "Salsa - running low"
+  else
+    "No stock"
+  end
+end
 
-check_stock(3, "Tortillas");
-# => "Tortillas - running LOW"
 
-check_stock(0, "Cheese");
-# => "Cheese - OUT of stock!"
+puts check_stock(4, "Coffee");
 
-check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+puts check_stock(3, "Tortillas");
+
+puts check_stock(0, "Cheese");
+
+puts check_stock(1, "Salsa");
